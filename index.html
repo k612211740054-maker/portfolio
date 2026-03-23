@@ -359,6 +359,78 @@ input, textarea {
     font-size: 1rem;
     padding: 12px;
 }
+/* Hero & Header responsive nâng cao */
+
+/* Khi màn hình <= 768px (tablet/mobile) */
+@media screen and (max-width: 768px) {
+    /* Hero layout dọc */
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 120px 20px 60px;
+        text-align: center;
+    }
+
+    /* Thu nhỏ phông chữ */
+    .hero-title {
+        font-size: 2rem; /* thay vì 3rem */
+        line-height: 1.2;
+    }
+
+    .hero-hello {
+        font-size: 1rem;
+    }
+
+    .hero-desc {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    /* Hero buttons xếp dọc */
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    /* Ảnh profile căn giữa trên mobile */
+    .hero-img {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* Khi màn hình <= 480px (mobile nhỏ) */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-desc {
+        font-size: 0.9rem;
+    }
+
+    /* Header: giảm padding, logo nhỏ */
+    header .nav-container {
+        padding: 10px 15px;
+        height: auto;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .header-actions {
+        justify-content: center;
+        margin-top: 5px;
+    }
+}
     </style>
 </head>
 <body>
