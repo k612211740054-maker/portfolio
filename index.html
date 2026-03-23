@@ -17,7 +17,7 @@
             --text-main: #ffffff;
             --text-sub: #94a3b8;
             /* Đổi từ Tím-Hồng sang Xanh-Trắng */
-            --primary-gradient: linear-gradient(90deg, #38bdf8, #ffffff); 
+            --primary-gradient: linear-gradient(90deg, #0ea5e9, #ffffff); 
             --glass-border: rgba(255, 255, 255, 0.08);
             --neon-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
             --ease: cubic-bezier(0.23, 1, 0.320, 1);
@@ -31,6 +31,7 @@
             color: var(--text-main);
             line-height: 1.6;
             overflow-x: hidden;
+            transition: background 0.3s, color 0.3s;
         }
 
         a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
@@ -255,11 +256,11 @@
    9. Light Mode
    ============================== */
 body.light-mode {
-    --bg-body: #ffffff;
-    --bg-card: rgba(241, 245, 249, 0.8);
-    --text-main: #0f172a;
+    --bg-body: #f8fafc;
+    --bg-card: rgba(255, 255, 255, 0.95);
+    --text-main: #1e293b;
     --text-sub: #475569;
-    --glass-border: rgba(0, 0, 0, 0.08);
+    --glass-border: rgba(0, 0, 0, 0.1);
 }
     </style>
 </head>
