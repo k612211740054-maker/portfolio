@@ -279,6 +279,19 @@ body.light-mode .logo i {
     -webkit-background-clip: text;
     -webkit-text-fill-color: #0ea5e9; /* logo gradient xanh nổi bật */
 }
+/* Contact form light mode */
+body.light-mode input,
+body.light-mode textarea {
+    color: #1e293b;           /* chữ đậm, đọc dễ trên nền sáng */
+    background: rgba(255, 255, 255, 0.95); /* nền input sáng, nổi bật */
+    border: 1px solid rgba(0,0,0,0.2);     /* viền rõ hơn */
+}
+
+/* Placeholder text */
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder {
+    color: #475569; /* chữ gợi ý nhạt hơn, vẫn đọc được */
+}
     </style>
 </head>
 <body>
