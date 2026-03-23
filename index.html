@@ -109,6 +109,23 @@
             border-color: #38bdf8;
             color: #fff;
         }
+        .btn-white-text {
+            background-color: #0c4a6e; /* nền xanh đậm */
+            color: #ffffff; /* chữ trắng */
+            border: none;
+            box-shadow: 0 4px 15px rgba(12, 74, 110, 0.3);
+            transition: all 0.3s ease;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .btn-white-text:hover {
+            background-color: #38bdf8; /* xanh sáng khi hover */
+            color: #1e293b; /* chữ tối khi hover */
+            transform: scale(1.05);
+        }
 
         /* ==============================
            4. Header (Đã bỏ nút Liên hệ góc phải)
@@ -468,7 +485,7 @@ input, textarea {
                     </ul>
                 </div>
                 <div class="hero-btns">
-                    <a href="#" class="btn btn-primary">TRAO ĐỔI</a>
+                    <a href="#" class="btn btn-white-text">TRAO ĐỔI</a>
                 </div>
             </div>
             
@@ -534,7 +551,7 @@ input, textarea {
                     </div>
                     <div class="contact-method">
                         <div class="method-icon"><i class="fab fa-github"></i></div>
-                        <div><h4>GitHub</h4><p style="color: #94a3b8;"><a href="#" style="color: #38bdf8;">k612211740054-maker</a></p></div>
+                        <div><h4>GitHub</h4><p style="color: #94a3b8;">k612211740054-maker</a></p></div>
                     </div>
                 </div>
                 <form class="contact-form">
@@ -544,7 +561,7 @@ input, textarea {
                     </div>
                     <input type="text" placeholder="Chủ đề">
                     <textarea placeholder="Tin nhắn của bạn..."></textarea>
-                    <button type="submit" class="btn btn-primary" style="margin-top: 10px; width: fit-content;">Gửi Tin Nhắn <i class="fas fa-paper-plane" style="margin-left: 10px;"></i></button>
+                    <button type="submit" class="btn btn-white-text" style="margin-top: 10px; width: fit-content;">Gửi Tin Nhắn <i class="fas fa-paper-plane" style="margin-left: 10px;"></i></button>
                 </form>
             </div>
         </section>
