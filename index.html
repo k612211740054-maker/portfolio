@@ -251,7 +251,16 @@
         
         input:focus, textarea:focus { border-color: #38bdf8; }
         textarea { height: 150px; resize: none; }
-
+/* ==============================
+   9. Light Mode
+   ============================== */
+body.light-mode {
+    --bg-body: #ffffff;
+    --bg-card: rgba(241, 245, 249, 0.8);
+    --text-main: #0f172a;
+    --text-sub: #475569;
+    --glass-border: rgba(0, 0, 0, 0.08);
+}
     </style>
 </head>
 <body>
@@ -370,5 +379,26 @@
             </div>
         </section>
     </div>
+<script>
+const toggle = document.querySelector(".theme-toggle");
+
+// load trạng thái cũ
+if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light-mode");
+    toggle.classList.replace("fa-moon", "fa-sun");
+}
+
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+        toggle.classList.replace("fa-moon", "fa-sun");
+        localStorage.setItem("theme", "light");
+    } else {
+        toggle.classList.replace("fa-sun", "fa-moon");
+        localStorage.setItem("theme", "dark");
+    }
+});
+</script>
 </body>
 </html>
