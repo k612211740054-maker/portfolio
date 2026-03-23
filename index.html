@@ -449,6 +449,52 @@ input, textarea {
         margin-top: 5px;
     }
 }
+/* ==============================
+   SPACING OPTIMIZED SECTIONS
+   ============================== */
+
+/* Hero section */
+.hero {
+    padding: 140px 0 80px;  /* giảm khoảng cách trên và dưới */
+}
+
+/* Section titles */
+h2.section-title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+/* Skills section */
+.skills {
+    padding: 60px 0;
+}
+
+/* Projects / Activities section */
+.projects {
+    padding: 60px 0;
+}
+
+/* Contact section */
+.contact {
+    padding: 80px 0 100px;
+}
+
+/* ==============================
+   RESPONSIVE SPACING
+   ============================== */
+@media screen and (max-width: 768px) {
+    .hero { padding: 120px 20px 60px; }
+    h2.section-title { margin-top: 50px; margin-bottom: 30px; }
+    .skills, .projects { padding: 50px 0; }
+    .contact { padding: 60px 20px 80px; }
+}
+
+@media screen and (max-width: 480px) {
+    .hero { padding: 100px 15px 40px; }
+    h2.section-title { margin-top: 40px; margin-bottom: 25px; font-size: 1.6rem; }
+    .skills, .projects { padding: 40px 15px; }
+    .contact { padding: 50px 15px 60px; }
+} 
     </style>
 </head>
 <body>
