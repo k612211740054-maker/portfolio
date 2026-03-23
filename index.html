@@ -292,6 +292,73 @@ body.light-mode input::placeholder,
 body.light-mode textarea::placeholder {
     color: #475569; /* chữ gợi ý nhạt hơn, vẫn đọc được */
 }
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+
+/* Hero section */
+@media screen and (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 120px 20px 60px;
+        text-align: center;
+    }
+
+    .hero-img {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+/* Skills & Projects grid responsive */
+@media screen and (max-width: 500px) {
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact section responsive */
+.contact-content {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Header responsive */
+@media screen and (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .header-actions {
+        justify-content: center;
+    }
+}
+
+/* Input / textarea responsive */
+input, textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+}
     </style>
 </head>
 <body>
